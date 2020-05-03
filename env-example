@@ -1,0 +1,12 @@
+# Set your variables here
+
+sitefile=sites.txt
+sitelog=sites.log
+options=" --spider -S"
+log_failures_only=0
+
+# Telegram
+TOKEN=<token>
+CHAT_ID=<chat_id>
+MESSAGE="Hei verden!"
+URL="https://api.telegram.org/bot$TOKEN/sendMessage"
