@@ -1,7 +1,7 @@
 # Set your variables here
 
-sitefile=sites.txt
-sitelog=sites.log
+sitefile=sitelist.txt
+sitelog=output.log
 options=" --spider -S"
 log_failures_only=0
 
