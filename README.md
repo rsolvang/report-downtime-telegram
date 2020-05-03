@@ -8,7 +8,7 @@ This is a simple bash script that uses a Telegram bot to report when one or more
 
 ## Installation on a server
 
-Add a new user that will run the script and log in
+Add a new user that will run the script and switch to the new user
 
     adduser sitecheck
     su sitecheck
@@ -22,3 +22,9 @@ Make the script executable and make an environtment file
 
     chmod +x checksite.sh
     cp env-example .env
+
+Fill in the correct information in the .env file
+
+## How to make a Telegram bot
+
+
