@@ -2,11 +2,10 @@
 
 sitefile=sitelist.txt
 sitelog=output.log
-options=" --spider -S"
 log_failures_only=0
 
 # Telegram
 TOKEN=<token>
 CHAT_ID=<chat_id>
-MESSAGE="Hei verden!"
+MESSAGE="Hello world!"
 URL="https://api.telegram.org/bot$TOKEN/sendMessage"

@@ -1,10 +1,11 @@
 #!/usr/bin/env bash
 
+# Import variables from the .env file
 set -o allexport; source .env; set +o allexport
 
 function check()
 {
-	status=`wget $options "$site" 2>&1 | awk '/HTTP\// {print $2}'`
+	status=`wget --spider -S "$site" 2>&1 | awk '/HTTP\// {print $2}'`
 	if [ "$status" == "200" ]; then
 		return 0
 	else
@@ -14,7 +15,7 @@ function check()
 
 function check_and_report()
 {
-	date=`date --iso-8601=seconds --utc`
+	date=`date --iso-8601=seconds`
 	if check "$1"; then
 		result=OK
 	else
