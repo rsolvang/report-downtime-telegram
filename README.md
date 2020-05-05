@@ -1,4 +1,4 @@
-# Report downtime of one or more websites to Telegram
+# Report downtime with a Telegram bot
 This simple bash script uses a Telegram bot to report when one or more websites are down. Inspired by [sitecheck](https://github.com/rla/sitecheck) by [rla](https://github.com/rla).
 
 ## Prerequisites
