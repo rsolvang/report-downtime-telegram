@@ -23,7 +23,7 @@ Make the script executable and make an environtment file
     chmod +x checksite.sh
     cp env-example .env
 
-Fill in the correct information in the .env file
+Fill in the correct information in the .env file. Follow the instructions below to create a Telegram bot.
 
 ## How to make a Telegram bot
 
