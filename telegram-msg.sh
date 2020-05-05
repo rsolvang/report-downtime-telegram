@@ -8,7 +8,7 @@ while getopts ":hm:" option; do
 			echo ""
 			echo 'A simple script to test if your connection to the Telegram bot works.'
 			echo ""
-			echo 'Usage: Run the script with no arguments to send "Hello World!" to your bot.'
+			echo 'Usage: Run the script with no arguments to send "Hello World!" from your bot to yourself.'
 			echo 'Use the -m argument to send a custom message, e.g. -m Single-string or -m "A full sentence"'
 			echo ""
 			exit 0
