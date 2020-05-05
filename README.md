@@ -27,4 +27,18 @@ Fill in the correct information in the .env file
 
 ## How to make a Telegram bot
 
+Note: The following steps assumes you already have a Telegram account.
 
+1. Search for @BotFather in your preferred Telegram client. 
+2. Create a new bot by typing `/newbot` and give it a common name (Your Bot Name) and a username (yourbotname_bot). Note that the username *has* to end with "bot" to be valid!
+3. Copy your token to a safe place, prefferably a password manager. This token is your authentication to send requests to the Telegram API.
+
+### Retrive your Chat ID
+
+You need to tell your bot which user to send messages to. To find your own Chat ID, you need to start a conversation with your newly created bot and send a request through the API:
+
+1. Find your bot in Telegram by searching for it (e.g. @yourbotname_bot)
+2. Send your bot a simple message, the content does not matter.
+3. Ask your bot for the information on the current conversation by sending the following API request:
+  - In a browser: `https://api.telegram.org/bot<INSERT YOUR TOKEN HERE>/getUpdates`
+  - On a terminal: `curl https://api.telegram.org/bot<INSERT YOUR TOKEN HERE>/getUpdates | grep -oP '(?<="from":{"id":)\w+'`
