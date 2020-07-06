@@ -46,3 +46,9 @@ You need to tell your bot which user to send messages to. To find your own Chat 
 ## Test your connection with the bot
 
 You can verify that your connection with the Telegram bot works by running `./telegram-msg.sh`. If you want to send a custom message, add `-m "A custom message"` as an argument to the script.
+
+## Run the script regularly with cron
+
+Add crontab entry to run monitoring every 5 minutes:
+
+    */5 * * * * <PATH-TO>/checksite.sh
